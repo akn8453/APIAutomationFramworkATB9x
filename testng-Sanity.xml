@@ -4,7 +4,7 @@
     <test verbose="2" preserve-order="true" name="C:/Users/HP/IdeaProjects/APIAutomationFramworkATB9x">
        <groups>
            <run>
-               <include name="Reg"></include>
+               <include name="Sanity"></include>
            </run>
        </groups>
         <classes>
