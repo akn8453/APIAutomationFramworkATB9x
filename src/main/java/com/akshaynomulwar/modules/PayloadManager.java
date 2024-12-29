@@ -1,7 +1,11 @@
 package com.akshaynomulwar.modules;
 
+import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import com.akshaynomulwar.pojos.*;
+
+import java.util.List;
+
 public class PayloadManager {
 
     // Converting the JAVA object to the String
@@ -88,7 +92,14 @@ public class PayloadManager {
 
     }
 
+    public List<BookingResponse> getABooking(String allBookingResponse) {
+        gson = new Gson();
+        // Deserialize the JSON into a list of Booking objects
+        List<BookingResponse> bookings = gson.fromJson(allBookingResponse, new TypeToken<List<BookingResponse>>() {
+        }.getType());
 
+        return bookings;
+    }
 
 
 

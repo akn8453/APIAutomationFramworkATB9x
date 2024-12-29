@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="APIAutomationFrameworkATB9x">
+        <groups>
+            <run>
+                <include name="qa"></include>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.akshaynomulwar.sample.TestIntegrationSample">
+            </class>
+            <class name="com.akshaynomulwar.tests.crud.test_CreateBooking"></class>
+        <class name="com.akshaynomulwar.tests.Integration.TestIntegrationCase1"></class>
+        <class name="com.akshaynomulwar.tests.Integration.TestIntegrationCase3"></class>
+        </classes>
+
+    </test>
+</suite>
