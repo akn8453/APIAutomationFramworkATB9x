@@ -45,6 +45,11 @@ public class PayloadManager {
         return booking;
     }
 
+
+    public void getToken(){
+
+    }
+
     //  ---- Token -----
     // JAVA to JSON
     public String setAuthPayload(){
@@ -68,8 +73,8 @@ public class PayloadManager {
 
     public String fullUpdatePayloadAsString() {
         Booking booking = new Booking();
-        booking.setFirstname("Pramod");
-        booking.setLastname("Dutta");
+        booking.setFirstname("Akshay");
+        booking.setLastname("Nomulwar");
         booking.setTotalprice(112);
         booking.setDepositpaid(true);
 
